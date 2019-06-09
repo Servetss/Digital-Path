@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class LevelBuild : MonoBehaviour
 {
-    public List<CirclesSpawn> CS_Level;
-    public int LevelButtonID;
-    public float RecordTime;
-    public int  Stars;
-    public int LevelMode;
+    [HideInInspector] public List<CirclesSpawn> CS_Level;
+    [HideInInspector] public int LevelButtonID;
+
+    [HideInInspector] public float RecordTime;
+    [HideInInspector] public int  Stars;
+
+    [HideInInspector] public int LevelMode;
+    [HideInInspector] public List<float> LevelTimeRecords;
+
+    [HideInInspector] public List<float> CirclesRotationPosZ;
+
+    [HideInInspector] public int StartTimeLevel;
 
     private void Start()
     {

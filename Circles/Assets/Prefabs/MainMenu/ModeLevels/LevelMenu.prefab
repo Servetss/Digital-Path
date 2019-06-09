@@ -390,7 +390,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2126595525992789026}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.77736104
+  m_Size: 0.7537499
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1527,8 +1527,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[4].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[4]
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -1682,8 +1762,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -1837,8 +1965,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -1997,18 +2157,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2022,6 +2187,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
         type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: m_PreferredHeight
@@ -2179,8 +2364,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2334,8 +2561,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2494,18 +2769,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.045
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2518,6 +2798,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
         type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: m_PreferredHeight
@@ -2670,8 +2960,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[4].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[5].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2825,8 +3175,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -2980,8 +3388,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3135,8 +3597,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3295,6 +3805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: CS_Level.Array.data[1].CircleType
       value: 
       objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
@@ -3307,12 +3822,22 @@ PrefabInstance:
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3466,8 +3991,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3626,18 +4215,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3650,6 +4244,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
         type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 149608764708991183, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: m_Color.r
@@ -3818,7 +4417,7 @@ PrefabInstance:
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: CS_Level.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3834,12 +4433,29 @@ PrefabInstance:
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -3993,8 +4609,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4148,8 +4833,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4303,8 +5030,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4458,18 +5223,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991183, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4638,18 +5456,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4808,8 +5658,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -4963,8 +5872,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 8304367555040402407, guid: af18a5c4efeec624ea9e4f97c4669284,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[2]
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeBonuses.Array.data[1]
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
@@ -5118,23 +6066,93 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
+      propertyPath: CS_Level.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
       propertyPath: TimeBonuses.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[1]
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: TimeBonuses.Array.data[2]
-      value: 5
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}
       propertyPath: PlayerTime
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[1].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[2].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[3].CircleType
+      value: 
+      objectReference: {fileID: 5148608004711400575, guid: a51f75b6db6fe244e970133c09f0dede,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[4].CircleType
+      value: 
+      objectReference: {fileID: 4468960405323914825, guid: 967b161236d8bec44bdb87f20981e606,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CS_Level.Array.data[0].CircleType
+      value: 
+      objectReference: {fileID: 2197934087599042202, guid: 352fb1b966bf77a4f8d9f822ab4570eb,
+        type: 3}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: TimeStart
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[0]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[2]
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[1]
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[3]
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 149608764708991176, guid: 64bf9fd1a841a3d45a911a6c45372633,
+        type: 3}
+      propertyPath: CirclesRotationPosZ.Array.data[4]
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7522458045020939663, guid: 64bf9fd1a841a3d45a911a6c45372633,
         type: 3}

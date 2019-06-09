@@ -30,6 +30,7 @@ public class SnapScrolling : MonoBehaviour
     private Vector2 contentVector;
 
     [SerializeField] private int selectedPanID;
+    private int SaveSelectedPanID;
     [SerializeField] private bool IsScrolling;
     [SerializeField] private MainMenuComm MMC;
 
@@ -39,10 +40,13 @@ public class SnapScrolling : MonoBehaviour
     [SerializeField] private Button ClassicModeButton;
     [SerializeField] private Button SecondModeButton;
 
+    [Space]
+    [Header("PageSelecter")]
+    [SerializeField] private Page page;
 
     [Space]
     [Header("ButtonsName")]
-    [SerializeField] private List<string> ButtonText;
+    [SerializeField] private List<Sprite> ButtonImage;
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +59,9 @@ public class SnapScrolling : MonoBehaviour
         SecondModeButton.onClick.AddListener(delegate() { MMC.OpenSecondLevelPanel();  });
 
         // End
-        
+
+        SaveSelectedPanID = selectedPanID;
+
         // Initialization Buttons On the Main Manu
         instPans = new GameObject[PanelCount];
         PanelPos = new Vector2[PanelCount];
@@ -66,7 +72,7 @@ public class SnapScrolling : MonoBehaviour
         {
             instPans[i] = Instantiate(PanelPref, transform, false);
             instPans[i].SetActive(true);
-            SetButtons(instPans[i].transform.GetChild(0).gameObject, instPans[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Text>(), i);
+            SetButtons(instPans[i].transform.GetChild(0).gameObject, i);
 
             if (i == 0) continue;
             instPans[i].transform.localPosition = new Vector2(instPans[i - 1].transform.localPosition.x + PanelPref.GetComponent<RectTransform>().sizeDelta.x + PanelOffset, instPans[i].transform.localPosition.y);
@@ -75,10 +81,10 @@ public class SnapScrolling : MonoBehaviour
         // End
     }
 
-    private void SetButtons(GameObject Button, Text Text, int IDButton)
+    private void SetButtons(GameObject Button, int IDButton)
     {
-        Text.text = ButtonText[IDButton];
-        
+        Button.GetComponent<Image>().sprite = ButtonImage[IDButton];
+
 
         switch (IDButton)
         {
@@ -101,6 +107,7 @@ public class SnapScrolling : MonoBehaviour
     void FixedUpdate()
     {
         float nearestPos = float.MaxValue;
+ 
         for (int i = 0; i < PanelCount; i++)
         {
             float distance = Mathf.Abs(contentRect.anchoredPosition.x - PanelPos[i].x);
@@ -108,6 +115,28 @@ public class SnapScrolling : MonoBehaviour
             {
                 nearestPos = distance;
                 selectedPanID = i;
+
+
+                if (contentRect.anchoredPosition.x > -100 && SaveSelectedPanID != 0)
+                {
+                    SaveSelectedPanID = 0;
+                    page.SetCurrentPage(SaveSelectedPanID);
+                }
+                else if ((contentRect.anchoredPosition.x <= -100 && contentRect.anchoredPosition.x > -400) && SaveSelectedPanID != 1)
+                {
+                    SaveSelectedPanID = 1;
+                    page.SetCurrentPage(SaveSelectedPanID);
+                }
+                else if (contentRect.anchoredPosition.x <= -400 && SaveSelectedPanID != 2)
+                {
+                    SaveSelectedPanID = 2;
+                    page.SetCurrentPage(SaveSelectedPanID);
+                }
+                //if (selectedPanID != SaveSelectedPanID)
+                //{
+                //    SaveSelectedPanID = selectedPanID;
+                //    page.SetCurrentPage(selectedPanID);
+                //}
             }
             float scale = Mathf.Clamp(1 / (distance / PanelOffset) * ScaleOffset, 0.5f, 1f);
 

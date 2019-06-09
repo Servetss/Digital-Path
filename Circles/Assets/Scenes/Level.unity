@@ -923,7 +923,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1011,18 +1010,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b212c06b4bedaa4a8168f01c2c41f80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &857476271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1798,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 0.14, y: 0.14}
   m_EdgeRadius: 0
 --- !u!212 &1640617819
 SpriteRenderer:
@@ -1966,7 +1953,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProcentXScreenSize: 75
   ProcentYScreenSize: 80
-  ClickText: {fileID: 0}
   SizeCircles:
   - {fileID: 8494215500022510740, guid: 035b3c4da93605d4db747fa88a5ea04c, type: 3}
   - {fileID: 2331423876235821446, guid: 5ff5578ec1e828a4999240d5485b0c55, type: 3}

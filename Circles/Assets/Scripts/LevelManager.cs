@@ -6,12 +6,13 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 { 
     // Структура которая собирает уровень
-    [SerializeField]
-    private List<CirclesSpawn> CS_Level;
+    [SerializeField] private List<CirclesSpawn> CS_Level;
+    [SerializeField] private List<float> CirclesRotationPosZ;
+
+    [Header("Time Start Level (if 0 then set defaul 6)")][SerializeField] private int TimeStart;
 
     [Header("Time")]
     [SerializeField] private List<float> TimeBonuses;
-
     public float PlayerTime;
 
 
@@ -40,51 +41,45 @@ public class LevelManager : MonoBehaviour
         ////Reset
         //PlayerPrefs.SetFloat("SelfTime" + gameObject.name.Substring(6) + LevelMode, 0);
         //PlayerPrefs.SetString("Wins" + gameObject.name.Substring(6) + LevelMode, "");
+        //PlayerPrefs.SetFloat("T" + gameObject.name.Substring(6) + LevelMode, 0);
         ////End Reset
 
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
-        //if (LB.LevelMode == LevelMode)
-        //{
-            levelWin = PlayerPrefs.GetString("Wins" + gameObject.name.Substring(6) + LevelMode) == "True" ? true : false;
+
+        levelWin = PlayerPrefs.GetString("Wins" + gameObject.name.Substring(6) + LevelMode) == "True" ? true : false;
 
 
-            if (LB.LevelButtonID != -1 && LB.LevelButtonID == Int32.Parse(gameObject.name.Substring(6)) && LB.LevelMode == LevelMode)
+        if (LB.LevelButtonID != -1 && LB.LevelButtonID == Int32.Parse(gameObject.name.Substring(6)) && LB.LevelMode == LevelMode)
+        {
+            LB.LevelButtonID = -1;
+        }
+
+
+        PlayerTime = PlayerPrefs.GetFloat("T" + gameObject.name.Substring(6) + LevelMode);
+        
+
+        try
+        {
+            string[] words = PlayerTime.ToString().Split(new char[] { '.' });
+            float second = Mathf.Round(Convert.ToSingle(words[1]));
+        }
+        catch { }
+
+
+        // Star On Level
+        int count = 0;
+
+        foreach (float time in TimeBonuses)
+        {
+            if (levelWin && (float)PlayerTime >= (float)time)
             {
-                PlayerTime = PlayerTime > PlayerPrefs.GetFloat("Timer" + LevelMode) || PlayerTime <= 0 ? PlayerPrefs.GetFloat("Timer" + LevelMode) : PlayerTime;
-
-                PlayerPrefs.SetFloat("Timer" + LevelMode, 0);
-                PlayerPrefs.SetFloat("SelfTime" + gameObject.name.Substring(6) + LevelMode, PlayerTime);
-
-                LB.LevelButtonID = -1;
+                Stars[count].SetActive(true);
+                count++;
             }
+        }
 
-
-            PlayerTime = PlayerPrefs.GetFloat("T" + gameObject.name.Substring(6) + LevelMode);
-
-
-            try
-            {
-                string[] words = PlayerTime.ToString().Split(new char[] { '.' });
-                float second = Mathf.Round(Convert.ToSingle(words[1]));
-            }
-            catch { }
-
-
-            // Star On Level
-            int count = 0;
-
-            foreach (float time in TimeBonuses)
-            {
-                if (levelWin && PlayerTime >= time * 0.1f)
-                {
-                    Stars[count].SetActive(true);
-                    count++;
-                }
-            }
-
-            StarsCount = count;
-            StarSumm += StarsCount;
-        //}
+        StarsCount = count;
+        StarSumm += StarsCount;
     }
 
 
@@ -98,6 +93,10 @@ public class LevelManager : MonoBehaviour
         LB.RecordTime = PlayerTime;
         LB.Stars = StarsCount;
         LB.LevelMode = LevelMode;
+        LB.LevelTimeRecords = TimeBonuses;
+        LB.CirclesRotationPosZ = CirclesRotationPosZ;
+        LB.StartTimeLevel = TimeStart;
+
         string Level_ID = gameObject.name.Substring(6);  
 
         LB.LevelButtonID = Int32.Parse(Level_ID);

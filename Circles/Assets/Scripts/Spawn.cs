@@ -10,7 +10,6 @@ public class Spawn : MonoBehaviour
     [Range(50, 100)]
     [SerializeField] private float ProcentYScreenSize = 80;   //Can not click below 80% Screnn Resolution
     private Vector3 vec;  // Vectore Screen Resolution
-    
 
     // Размеры кружков
     [SerializeField] private List<GameObject> SizeCircles;
@@ -42,6 +41,7 @@ public class Spawn : MonoBehaviour
 
         LevelCircles = new List<GameObject>(LB.CS_Level.Count);
         int PositionSpawn = 0;
+        int count = 0;
         foreach (CirclesSpawn Circle in LB.CS_Level)
         {
             if (PositionSpawn < SizeCircles.Count)
@@ -50,11 +50,15 @@ public class Spawn : MonoBehaviour
                 LevelCircles.Add(CircleObj);
                 CircleObj.GetComponent<MainCircle>().SetCircleSize(SizeCircles[PositionSpawn]);
                 CircleObj.GetComponent<MainCircle>().SetID(PositionSpawn);
+                if(LB.CirclesRotationPosZ.Count > 0) CircleObj.transform.rotation = Quaternion.Euler(0,0, LB.CirclesRotationPosZ[count]);
+                    
                 if(LevelMode == 1)  CircleObj.transform.localScale *= 1 + (float)PositionSpawn / 10;
                 PositionSpawn++;
             }
             else
                 break;
+
+            count++;
         }
 
         CircleName.text = LB.CS_Level[0].CircleType.ToString();

@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
 
     private bool TimerWork = true;
-    public float sec = 5f, min, hour;   //Time for Timer
+    public float sec = 6f, min, hour;   //Time for Timer
     private string sec_s, min_s;
     private Vector3 dir;                // Vector Move
     private Vector3 MoveDirection;      // Player Start Move in Second Level Mode 
@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
+        sec = LB.StartTimeLevel == 0 ? 6 : LB.StartTimeLevel; // if 0 - Set default time "6"
         if (LB.LevelMode == 1)
         {
             LR = gameObject.GetComponent<LineRenderer>();
@@ -75,7 +76,9 @@ public class Player : MonoBehaviour
                 secondRec = Mathf.Round(Convert.ToSingle(words[1]));
             }
 
-            RecordTime.text = minuteRec + " : " + secondRec;
+            string m = minuteRec < 10 ? "0" + minuteRec.ToString() : minuteRec.ToString();
+            string s = secondRec < 10 ? "0" + secondRec.ToString() : secondRec.ToString();
+            RecordTime.text = m + " : " + s;
             
 
             for (int i = 0; i < LB.Stars; i++)
@@ -98,7 +101,7 @@ public class Player : MonoBehaviour
 
         if (!end)
         {
-            if (distance >= DistanceToFirstCircle + (DistanceBetween * (_Spawn.GetCirclesCount() - 3)))  // (_Spawn.GetCirclesCount() - 1)
+            if (distance >= DistanceToFirstCircle + (DistanceBetween * (_Spawn.GetCirclesCount() - 1)))  // (_Spawn.GetCirclesCount() - 1)
             {
                 GameOver(true);   // Win?
             }
@@ -209,21 +212,30 @@ public class Player : MonoBehaviour
 
         if (win)
         {
-            PlayerPrefs.SetFloat("Timer" + LB.LevelMode, min + Convert.ToSingle(sec_s) * 0.1f);
+            float recordTime = minuteRec + secondRec * 0.01f;
+            float gameTime = Convert.ToSingle(min_s) + Convert.ToSingle(sec_s) * 0.01f;
 
-            PlayerPrefs.SetFloat("T" + LB.LevelButtonID + LB.LevelMode, min + Convert.ToSingle(sec_s) * 0.1f);
+            if (recordTime < gameTime) // New Record Time
+            {
+                PlayerPrefs.SetFloat("T" + LB.LevelButtonID + LB.LevelMode, gameTime);
+                RecordTime.text = min_s + " : " + sec_s;
+
+                int count = 0;
+                foreach (float time in LB.LevelTimeRecords)
+                {
+                    if (gameTime >= time)
+                    {
+                        Stars[count].SetActive(true);
+                        count++;
+                    }
+                }
+            }
             PlayerPrefs.SetString("Wins" + LB.LevelButtonID + LB.LevelMode, "True");
         }
         else
         {
-            PlayerPrefs.SetFloat("T" + LB.LevelButtonID + LB.LevelMode, min + Convert.ToSingle(sec_s) * 0.1f);
-
-            PlayerPrefs.SetFloat("Timer" + LB.LevelMode, minuteRec + (secondRec * 0.1f));
-
             if (PlayerPrefs.GetString("Wins" + LB.LevelButtonID + LB.LevelMode) != "True")
-            {
                 PlayerPrefs.SetString("Wins" + LB.LevelButtonID + LB.LevelMode, "False");
-            }
         }
 
         string endText = win ? "Win !" : "Game Over!";

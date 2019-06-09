@@ -46,7 +46,7 @@ public class LevelScripts : MonoBehaviour
         if (!PausePanel.activeSelf)
         {
             Pause = true;
-            Time.timeScale = _TextPause == "Win !" ? 0.4f : 0;
+            Time.timeScale = _TextPause == "Win !" ? 0.5f : 0;
 
             PauseText.text = _TextPause;
             PausePanel.SetActive(true);

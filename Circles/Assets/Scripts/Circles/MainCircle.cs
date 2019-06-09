@@ -23,11 +23,17 @@ public class MainCircle : MonoBehaviour
 
     private void Start()
     {
+        DefaultStart();
+    }
+
+    protected void DefaultStart()
+    {
         Player_S = GameObject.Find("Player").GetComponent<Player>();
 
         //
         BeforClick();
     }
+
     private void FixedUpdate()
     {
         CircleMove();

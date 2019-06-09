@@ -5,12 +5,13 @@ using UnityEngine;
 public class Circle_Type_4 : MainCircle
 {
     private SpriteRenderer SR;
-    private float Angle = 0;
+    private float Angle = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         SR = CircleSize.GetComponent<SpriteRenderer>();
+        DefaultStart();
     }
 
     // Update is called once per frame
