@@ -51,14 +51,8 @@ public class Player : MonoBehaviour
         {
             LR = gameObject.GetComponent<LineRenderer>();
             LR.SetPosition(0, transform.position);
-            vec = transform.position.normalized;
 
-            float y = UnityEngine.Random.Range(-1f, 1f);
-            float x = UnityEngine.Random.Range(-1f, 1f);
-
-            vec.y += y;
-            vec.x += x;
-            vec = vec.normalized;
+            vec = LB.PlayerVecorMove.normalized;
             LR.SetPosition(1, vec);
         }
 
@@ -75,6 +69,7 @@ public class Player : MonoBehaviour
                 minuteRec = Convert.ToSingle(words[0]);
                 secondRec = Mathf.Round(Convert.ToSingle(words[1]));
             }
+            
 
             string m = minuteRec < 10 ? "0" + minuteRec.ToString() : minuteRec.ToString();
             string s = secondRec < 10 ? "0" + secondRec.ToString() : secondRec.ToString();
@@ -162,7 +157,7 @@ public class Player : MonoBehaviour
             else
                 sec -= Time.deltaTime;
 
-            sec_s = sec < 10 ? "0" + Mathf.Round(sec).ToString() : Mathf.Round(sec).ToString();
+            sec_s = sec < 10 ? "0" + Mathf.Floor(sec).ToString() : Mathf.Floor(sec).ToString();
             min_s = min < 10 ? "0" + min.ToString() : min.ToString();
             Timer.text = min_s + ":" + sec_s;
         }
@@ -213,7 +208,9 @@ public class Player : MonoBehaviour
         if (win)
         {
             float recordTime = minuteRec + secondRec * 0.01f;
-            float gameTime = Convert.ToSingle(min_s) + Convert.ToSingle(sec_s) * 0.01f;
+
+            float secC = Convert.ToSingle(sec_s) == 10 ? 0.1f : Convert.ToSingle(sec_s) * 0.01f;
+            float gameTime = Convert.ToSingle(min_s) + secC;
 
             if (recordTime < gameTime) // New Record Time
             {

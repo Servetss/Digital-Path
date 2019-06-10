@@ -12,13 +12,20 @@ public class Circle_Type_7 : MainCircle
     {
         if (EventClick)
         {
+            float dis = 0;
             if (!Start)
             {
                 Start = true;
                 MousePosStart = Input.mousePosition;
+                
             }
+            
+            dis = ((MousePosStart.y - Input.mousePosition.y) + (MousePosStart.x - Input.mousePosition.x)) / 2;
 
-            transform.rotation = Quaternion.Euler(0, 0, Vector3.Distance(MousePosStart, Input.mousePosition));
+            transform.rotation = Quaternion.Euler(0, 0, dis);
+
+            //transform.LookAt(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+
         }
     }
 }

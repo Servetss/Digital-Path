@@ -138,7 +138,7 @@ public class Spawn : MonoBehaviour
             {
                 _MC.EventClick = true;
             }
-            if (!LS.Pause && Input.GetMouseButtonUp(0))
+            if (!LS.Pause && Input.GetMouseButtonUp(0) && _MC.EventClick)
             {
                 _MC.EventClick = false;
                 _MC.AfterClick();

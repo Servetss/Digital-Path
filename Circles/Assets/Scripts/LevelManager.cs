@@ -11,19 +11,24 @@ public class LevelManager : MonoBehaviour
 
     [Header("Time Start Level (if 0 then set defaul 6)")][SerializeField] private int TimeStart;
 
+
+    [Space]
     [Header("Time")]
     [SerializeField] private List<float> TimeBonuses;
     public float PlayerTime;
 
-
+    [Space]
     [Header("Stars Obj")]
     [SerializeField] private List<GameObject> Stars;
 
+    [Space]
+    [Header("Player Vecor Move (if Green Mode))")]
+    [SerializeField] private Vector2 VectorMove;
 
     private int LevelMode;  // 0 - First Level Mode, 1 - Second Level Mode
 
     private bool levelWin = false;
-    public int StarsCount;
+    [HideInInspector ]public int StarsCount;
 
     private static int StarSumm = 0;
     LevelBuild LB;
@@ -43,6 +48,10 @@ public class LevelManager : MonoBehaviour
         //PlayerPrefs.SetString("Wins" + gameObject.name.Substring(6) + LevelMode, "");
         //PlayerPrefs.SetFloat("T" + gameObject.name.Substring(6) + LevelMode, 0);
         ////End Reset
+
+        //PlayerPrefs.SetFloat("SelfTime" + 31 + 0, 0);
+        //PlayerPrefs.SetString("Wins" + 31 + 0, "");
+        //PlayerPrefs.SetFloat("T" + 31 + 0, 0);
 
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
 
@@ -96,6 +105,8 @@ public class LevelManager : MonoBehaviour
         LB.LevelTimeRecords = TimeBonuses;
         LB.CirclesRotationPosZ = CirclesRotationPosZ;
         LB.StartTimeLevel = TimeStart;
+        LB.PlayerVecorMove = VectorMove;
+
 
         string Level_ID = gameObject.name.Substring(6);  
 

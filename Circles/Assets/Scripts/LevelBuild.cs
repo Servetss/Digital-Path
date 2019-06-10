@@ -17,6 +17,8 @@ public class LevelBuild : MonoBehaviour
 
     [HideInInspector] public int StartTimeLevel;
 
+    [HideInInspector] public Vector2 PlayerVecorMove;
+
     private void Start()
     {
         DontDestroyOnLoad(this);

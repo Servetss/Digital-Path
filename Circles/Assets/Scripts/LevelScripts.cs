@@ -21,7 +21,7 @@ public class LevelScripts : MonoBehaviour
     public void BackClick()
     {
         Time.timeScale = 1;
-        _Player.GameOver(false);
+        //_Player.GameOver(false);
         Application.LoadLevel("MainMenu");
     }
 
