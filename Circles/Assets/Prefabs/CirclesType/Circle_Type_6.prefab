@@ -50,3 +50,5 @@ MonoBehaviour:
     rgba: 4294901786
   CircleEvent: 1
   EventClick: 0
+  Name: Holder
+  Description: 'Touch and hold your screen for circle properl '

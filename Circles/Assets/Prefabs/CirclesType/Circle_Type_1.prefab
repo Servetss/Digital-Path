@@ -50,3 +50,5 @@ MonoBehaviour:
     rgba: 4278190335
   CircleEvent: 0
   EventClick: 0
+  Name: Simple Circle
+  Description: Simple circle without effects and with standart speed

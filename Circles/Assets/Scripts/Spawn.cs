@@ -51,8 +51,8 @@ public class Spawn : MonoBehaviour
                 CircleObj.GetComponent<MainCircle>().SetCircleSize(SizeCircles[PositionSpawn]);
                 CircleObj.GetComponent<MainCircle>().SetID(PositionSpawn);
                 if(LB.CirclesRotationPosZ.Count > 0) CircleObj.transform.rotation = Quaternion.Euler(0,0, LB.CirclesRotationPosZ[count]);
-                    
-                if(LevelMode == 1)  CircleObj.transform.localScale *= 1 + (float)PositionSpawn / 10;
+
+                if (LevelMode == 1)  CircleObj.transform.localScale *= 1 + (float)PositionSpawn / 10;
                 PositionSpawn++;
             }
             else
@@ -60,8 +60,8 @@ public class Spawn : MonoBehaviour
 
             count++;
         }
-
-        CircleName.text = LB.CS_Level[0].CircleType.ToString();
+        
+        CircleName.text = LB.CS_Level[0].CircleType.GetComponent<MainCircle>().GetName();
 
         float ResolX = Screen.height * (ProcentXScreenSize / 100);
         float ResolY = Screen.width * (ProcentYScreenSize / 100);
@@ -153,7 +153,7 @@ public class Spawn : MonoBehaviour
     {
         if (PositionClick < LB.CS_Level.Count)
         {
-            CircleName.text = LB.CS_Level[PositionClick].CircleType.ToString();
+            CircleName.text = LB.CS_Level[PositionClick].CircleType.GetComponent<MainCircle>().GetName();
         }
         else
             CircleName.text = "GO!";

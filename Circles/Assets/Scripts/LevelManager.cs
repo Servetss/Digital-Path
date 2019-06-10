@@ -44,6 +44,7 @@ public class LevelManager : MonoBehaviour
 
 
         ////Reset
+        //PlayerPrefs.SetFloat("UnlockCircle", 0));
         //PlayerPrefs.SetFloat("SelfTime" + gameObject.name.Substring(6) + LevelMode, 0);
         //PlayerPrefs.SetString("Wins" + gameObject.name.Substring(6) + LevelMode, "");
         //PlayerPrefs.SetFloat("T" + gameObject.name.Substring(6) + LevelMode, 0);
@@ -106,6 +107,11 @@ public class LevelManager : MonoBehaviour
         LB.CirclesRotationPosZ = CirclesRotationPosZ;
         LB.StartTimeLevel = TimeStart;
         LB.PlayerVecorMove = VectorMove;
+
+        // Unlock new circles in "Circles Library" in the class ScrollCircle.cs 
+        float a = Mathf.Floor(Convert.ToSingle(gameObject.name.Substring(6)) / transform.parent.parent.parent.parent.GetComponent<PointCollect>().LevelsEtap);
+        if (a > PlayerPrefs.GetFloat("UnlockCircle"))
+            PlayerPrefs.SetFloat("UnlockCircle", a);
 
 
         string Level_ID = gameObject.name.Substring(6);  

@@ -984,6 +984,7 @@ MonoBehaviour:
   IsScrolling: 0
   MMC: {fileID: 7027722444564147346, guid: f4386c2b60cf90f4f9fa134dd12b4830, type: 3}
   LevelModeGroupe: {fileID: 7642832708188085909}
+  CirclesPanel: {fileID: 0}
   ClassicModeButton: {fileID: 773205861268560845}
   SecondModeButton: {fileID: 2180492704277259030}
   page: {fileID: 4386119410801863294}

@@ -221,6 +221,7 @@ MonoBehaviour:
   LevelTimeRecords: []
   CirclesRotationPosZ: []
   StartTimeLevel: 0
+  PlayerVecorMove: {x: 0, y: 0}
 --- !u!4 &1489139150
 Transform:
   m_ObjectHideFlags: 0
@@ -807,6 +808,12 @@ PrefabInstance:
       propertyPath: SecondLevelPanel
       value: 
       objectReference: {fileID: 8134247753651254921, guid: 767c5f22207f5fb4cbd39a029ff9a4ad,
+        type: 3}
+    - target: {fileID: 7027722444564147346, guid: f4386c2b60cf90f4f9fa134dd12b4830,
+        type: 3}
+      propertyPath: CircleInfoPanel
+      value: 
+      objectReference: {fileID: 9121290682304809533, guid: 72e5a8282ea95e64399a86c4050b6c31,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4386c2b60cf90f4f9fa134dd12b4830, type: 3}

@@ -9,7 +9,7 @@ public class PointCollect : MonoBehaviour
     [SerializeField] private Text AllStars_T;
     [SerializeField] private Text NeedStars_T;
 
-    [SerializeField] private int LevelsEtap;
+    [SerializeField] public int LevelsEtap;
     [SerializeField] private int LevelGroupe;
     private List<GameObject> Levels;
     private int Points = 0;

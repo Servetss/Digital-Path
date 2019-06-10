@@ -50,3 +50,5 @@ MonoBehaviour:
     rgba: 4292935424
   CircleEvent: 0
   EventClick: 0
+  Name: Ghost
+  Description: Have standart speed and alway hide from sight

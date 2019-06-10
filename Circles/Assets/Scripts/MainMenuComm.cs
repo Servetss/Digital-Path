@@ -9,9 +9,12 @@ public class MainMenuComm : MonoBehaviour
     [SerializeField] private GameObject Canvas;
 
     // Panels in the Canvas
+    [SerializeField] public GameObject MainPanel;
+    [Space]
     [SerializeField] public GameObject LevelPanel;
     [SerializeField] public GameObject SecondLevelPanel;
-    [SerializeField] public GameObject MainPanel;
+    [Space]
+    [SerializeField] public GameObject CircleInfoPanel;
 
 
     private Button Buttons;
@@ -20,6 +23,7 @@ public class MainMenuComm : MonoBehaviour
     {
         CreateLevelMenu();
         CreateMainPanel();
+        CreateCircleInfoPanel();
     }
 
     private void Start()
@@ -61,11 +65,19 @@ public class MainMenuComm : MonoBehaviour
         MainPanel.transform.SetParent(Canvas.transform);
         MainPanel.transform.localPosition = new Vector3(0, 0, 0);
     }
+
+    private void CreateCircleInfoPanel()
+    {
+        // Create Panel
+        CircleInfoPanel = Instantiate(CircleInfoPanel);
+        CircleInfoPanel.transform.SetParent(Canvas.transform);
+        CircleInfoPanel.transform.localPosition = new Vector3(0, 0, 0);
+        CircleInfoPanel.SetActive(false);
+    }
     #endregion
 
     public void OpenLevePanel()
     {
-
         // Active - Level Panel
         LevelPanel.SetActive(true);
 
@@ -82,6 +94,7 @@ public class MainMenuComm : MonoBehaviour
         MainPanel.SetActive(false);
     }
 
+
     public void BackToMainMenu()
     {
         // Active MainMenu
@@ -90,5 +103,6 @@ public class MainMenuComm : MonoBehaviour
         // Close other 
         LevelPanel.SetActive(false);
         SecondLevelPanel.SetActive(false);
+        CircleInfoPanel.SetActive(false);
     }
 }

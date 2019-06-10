@@ -15,7 +15,11 @@ public class MainCircle : MonoBehaviour
 
     public bool EventClick = false; // Event Tuch to screen or Mouse Click (Don`t necessarily)  
 
-    private int ID; // Personal identification Circle
+    [Space]
+    [SerializeField] private string Name;
+    [SerializeField] private string Description;
+    
+    private int ID;  // Personal identification Circle
 
     protected Player Player_S;
 
@@ -64,14 +68,20 @@ public class MainCircle : MonoBehaviour
         child.GetComponent<SpriteRenderer>().color = CircleColor;
     }
 
-
+    #region GetData
     // Checked which Type
     public bool GetCircleEnum(CirclesEnum _CircleEvent)
     {
         return CircleEvent == _CircleEvent ? true : false;
     }
+    public string GetDescription()
+    { return Description; }
+    public Color32 GetColor()
+    { return CircleColor; }
+    public string GetName()
+    { return Name; }
 
-
+    #endregion
     // Event Click
     protected virtual void BeforClick()
     {  }

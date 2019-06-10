@@ -50,4 +50,6 @@ MonoBehaviour:
     rgba: 4294902008
   CircleEvent: 0
   EventClick: 0
+  Name: Accelerator
+  Description: Always change speed
   Acceleration: 4

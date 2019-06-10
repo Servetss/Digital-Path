@@ -50,3 +50,6 @@ MonoBehaviour:
     rgba: 4278222335
   CircleEvent: 1
   EventClick: 0
+  Name: Valve
+  Description: Hold and move your finger for propel circle. Circle follows forward
+    your finger

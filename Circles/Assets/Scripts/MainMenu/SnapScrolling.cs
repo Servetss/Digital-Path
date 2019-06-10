@@ -60,6 +60,7 @@ public class SnapScrolling : MonoBehaviour
 
         // End
 
+
         SaveSelectedPanID = selectedPanID;
 
         // Initialization Buttons On the Main Manu
@@ -86,16 +87,17 @@ public class SnapScrolling : MonoBehaviour
         Button.GetComponent<Image>().sprite = ButtonImage[IDButton];
 
 
+        Button btn_lvl = Button.GetComponent<Button>();
         switch (IDButton)
         {
             case 0: // Open Level
-                Button btn_lvl = Button.GetComponent<Button>();
                 btn_lvl.onClick.AddListener(delegate () { LevelMode(); }); // MMC.OpenLevePanel(); 
-
                 break;
-            case 1:
+            case 1:  
+                btn_lvl.onClick.AddListener(delegate () { OpenCirclePanel(); }); // MMC.OpenLevePanel(); 
                 break;
             case 2:
+                btn_lvl.onClick.AddListener(delegate () { AppClose(); });
                 break;
             default:
                 break;
@@ -132,11 +134,7 @@ public class SnapScrolling : MonoBehaviour
                     SaveSelectedPanID = 2;
                     page.SetCurrentPage(SaveSelectedPanID);
                 }
-                //if (selectedPanID != SaveSelectedPanID)
-                //{
-                //    SaveSelectedPanID = selectedPanID;
-                //    page.SetCurrentPage(selectedPanID);
-                //}
+
             }
             float scale = Mathf.Clamp(1 / (distance / PanelOffset) * ScaleOffset, 0.5f, 1f);
 
@@ -160,22 +158,39 @@ public class SnapScrolling : MonoBehaviour
         IsScrolling = scroll; 
     }
 
-    private void LevelMode()
+    private void MainButtonsHide(bool Hide)
     {
         for (int i = 0; i < PanelCount; i++)
         {
-            instPans[i].SetActive(false);
+            instPans[i].SetActive(!Hide);
         }
+    }
+
+    private void LevelMode()
+    {
+        MainButtonsHide(true);
         LevelModeGroupe.SetActive(true);
+    }
+
+
+    private void OpenCirclePanel()
+    {
+        MMC.CircleInfoPanel.SetActive(true);
+        //MainButtonsHide(true);
     }
 
     public void Back_LevelMode()
     {
+        MMC.CircleInfoPanel.SetActive(false);
         LevelModeGroupe.SetActive(false);
-        for (int i = 0; i < PanelCount; i++)
-        {
-            instPans[i].SetActive(true);
-        }
+
+        MainButtonsHide(false);
+    }
+
+
+    private void AppClose()
+    {
+        Application.Quit();
     }
 
 }
