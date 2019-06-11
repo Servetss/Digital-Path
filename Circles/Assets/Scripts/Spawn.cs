@@ -145,6 +145,7 @@ public class Spawn : MonoBehaviour
                 PositionClick++;
             }
 
+
             ChangeCircleName();
         }
     }

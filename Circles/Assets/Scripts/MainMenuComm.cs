@@ -31,6 +31,15 @@ public class MainMenuComm : MonoBehaviour
         Time.timeScale = 1;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
+    int count = 0;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ScreenCapture.CaptureScreenshot("Screenshot_" + count + ".png");
+            count++;
+        }
+    }
 
     #region CretePanelsMM
     private void CreateLevelMenu()

@@ -47,8 +47,8 @@ MonoBehaviour:
   Speed: 1
   CircleColor:
     serializedVersion: 2
-    rgba: 4292935424
+    rgba: 4290697472
   CircleEvent: 0
   EventClick: 0
   Name: Ghost
-  Description: Have standart speed and alway hide from sight
+  Description: This circle has a standard speed and sometimes it is hidden from view.

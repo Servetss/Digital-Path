@@ -47,8 +47,8 @@ MonoBehaviour:
   Speed: 1
   CircleColor:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278190297
   CircleEvent: 0
   EventClick: 0
-  Name: Simple Circle
-  Description: Simple circle without effects and with standart speed
+  Name: Simple
+  Description: The simple circle without any effects and with standart speed

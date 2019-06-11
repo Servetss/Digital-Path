@@ -312,6 +312,7 @@ MonoBehaviour:
   - {fileID: 5255136860889593022}
   - {fileID: 8337637293516085470}
   - {fileID: 7770625698756474815}
+  VectorMove: {x: 0, y: 0}
   StarsCount: 0
 --- !u!114 &7522458045020939663
 MonoBehaviour:

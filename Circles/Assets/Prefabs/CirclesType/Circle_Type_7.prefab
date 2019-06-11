@@ -47,9 +47,9 @@ MonoBehaviour:
   Speed: 0
   CircleColor:
     serializedVersion: 2
-    rgba: 4278222335
+    rgba: 4278218722
   CircleEvent: 1
   EventClick: 0
   Name: Valve
-  Description: Hold and move your finger for propel circle. Circle follows forward
-    your finger
+  Description: Hold and move your finger to move the circle. The circle follows your
+    finger forward.

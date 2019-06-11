@@ -47,8 +47,8 @@ MonoBehaviour:
   Speed: 1
   CircleColor:
     serializedVersion: 2
-    rgba: 4294901786
+    rgba: 4292214806
   CircleEvent: 1
   EventClick: 0
   Name: Holder
-  Description: 'Touch and hold your screen for circle properl '
+  Description: Press and hold the screen to make this circle move.

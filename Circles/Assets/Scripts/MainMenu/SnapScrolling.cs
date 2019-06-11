@@ -164,6 +164,8 @@ public class SnapScrolling : MonoBehaviour
         {
             instPans[i].SetActive(!Hide);
         }
+
+        page.gameObject.SetActive(!Hide);
     }
 
     private void LevelMode()

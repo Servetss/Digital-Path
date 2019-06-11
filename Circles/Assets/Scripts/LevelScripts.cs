@@ -17,6 +17,15 @@ public class LevelScripts : MonoBehaviour
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
     }
 
+    int count = 0;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ScreenCapture.CaptureScreenshot("Screenshot_" +LB.LevelMode + "_" + count + ".png");
+            count++;
+        }
+    }
 
     public void BackClick()
     {

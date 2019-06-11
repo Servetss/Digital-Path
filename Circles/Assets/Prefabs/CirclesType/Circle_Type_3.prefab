@@ -47,10 +47,10 @@ MonoBehaviour:
   Speed: 1
   CircleColor:
     serializedVersion: 2
-    rgba: 4278255516
+    rgba: 4278244995
   CircleEvent: 0
   EventClick: 0
   Name: Snail
-  Description: Circle move with standart speed, but never can`t stop. After click
-    move slowly
+  Description: The circle moves at a standard speed, but never stops.  After pressing
+    it moves slowly
   SpeedAfter: 0.1

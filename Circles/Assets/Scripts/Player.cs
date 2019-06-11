@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
 
         if (!end)
         {
-            if (distance >= DistanceToFirstCircle + (DistanceBetween * (_Spawn.GetCirclesCount() - 1)))  // (_Spawn.GetCirclesCount() - 1)
+            if (distance >= DistanceToFirstCircle + (DistanceBetween * (_Spawn.GetCirclesCount() - 1))) 
             {
                 GameOver(true);   // Win?
             }
@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
                 LR.enabled = false;
                 MoveToNext = false;
             }
-            else if (_Spawn.PositionClick > 1 && (DistanceToFirstCircle + (DistanceBetween * (_Spawn.PositionClick - 1))) <= distance )
+            else if (_Spawn.PositionClick > 1 && (DistanceToFirstCircle + (DistanceBetween * (_Spawn.PositionClick - 1))) <= distance)
             {
                 gameObject.transform.SetParent(_Spawn.LevelCircles[_Spawn.PositionClick - 1].transform);
                 MoveToNext = false;
@@ -134,7 +134,7 @@ public class Player : MonoBehaviour
 
     private void EndMove()
     {
-        transform.Translate(_EndMove * (Speed * 0.01f));
+        transform.Translate(vec * (Speed * 0.01f));
     }
 
 
@@ -199,9 +199,10 @@ public class Player : MonoBehaviour
         }
         else
         {
-            gameObject.transform.SetParent(Camera.main.transform);
-            _EndMove = transform.position - new Vector3(0, 0, 0);
             MoveToNext = false;
+            //gameObject.transform.SetParent(Camera.main.transform);
+            gameObject.transform.SetParent(_Spawn.gameObject.transform);
+            _EndMove = (transform.position - startPos).normalized;
             GameOverMove = true;
         }
 

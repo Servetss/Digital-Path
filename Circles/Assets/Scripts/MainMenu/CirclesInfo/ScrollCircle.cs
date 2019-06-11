@@ -17,7 +17,8 @@ public class ScrollCircle : MonoBehaviour
         foreach (MainCircle Circle in Circles)
         {
             bool Open = count - 1 <= PlayerPrefs.GetFloat("UnlockCircle") ? true : false;
-            print(PlayerPrefs.GetFloat("UnlockCircle"));
+
+
             Content.transform.GetChild(count).GetComponent<CircleDescription>().Init(Circle.GetDescription(), Circle.GetColor(), Circle.GetName(), Open);
             count++;
         }

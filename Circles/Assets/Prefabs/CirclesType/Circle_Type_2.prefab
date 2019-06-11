@@ -47,8 +47,8 @@ MonoBehaviour:
   Speed: 3
   CircleColor:
     serializedVersion: 2
-    rgba: 4278245375
+    rgba: 4278239717
   CircleEvent: 0
   EventClick: 0
   Name: Fast
-  Description: Circle without effects but move very fast!
+  Description: The circle without any effects but it moves very fast!

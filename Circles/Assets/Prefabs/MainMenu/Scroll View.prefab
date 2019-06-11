@@ -452,7 +452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -146, y: -192}
+  m_AnchoredPosition: {x: -179, y: -302}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2963440671997459849
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8248337, g: 0.9622642, b: 0.748932, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6745283, b: 0.6745283, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -984,13 +984,12 @@ MonoBehaviour:
   IsScrolling: 0
   MMC: {fileID: 7027722444564147346, guid: f4386c2b60cf90f4f9fa134dd12b4830, type: 3}
   LevelModeGroupe: {fileID: 7642832708188085909}
-  CirclesPanel: {fileID: 0}
   ClassicModeButton: {fileID: 773205861268560845}
   SecondModeButton: {fileID: 2180492704277259030}
   page: {fileID: 4386119410801863294}
   ButtonImage:
   - {fileID: 21300000, guid: 7023d090ecd188840a001bfb10490cb5, type: 3}
-  - {fileID: 21300000, guid: 2f0366950677cff4d9dc32c91d48a4f0, type: 3}
+  - {fileID: 21300000, guid: 990c82679511eb2408d6c00241e75974, type: 3}
   - {fileID: 21300000, guid: 1b56c9224f65a8747b928173c5c2b8bf, type: 3}
 --- !u!222 &4260448014523414094
 CanvasRenderer:
