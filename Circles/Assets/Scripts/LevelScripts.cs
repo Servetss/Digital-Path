@@ -15,17 +15,11 @@ public class LevelScripts : MonoBehaviour
     private void Start()
     {
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
+
+        Time.timeScale = 1;
     }
 
-    int count = 0;
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ScreenCapture.CaptureScreenshot("Screenshot_" +LB.LevelMode + "_" + count + ".png");
-            count++;
-        }
-    }
+
 
     public void BackClick()
     {
@@ -62,6 +56,7 @@ public class LevelScripts : MonoBehaviour
 
         }
     }
+
 
     public void ResumeClick()
     {

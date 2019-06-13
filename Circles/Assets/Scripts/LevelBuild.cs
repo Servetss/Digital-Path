@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,8 @@ public class LevelBuild : MonoBehaviour
     [HideInInspector] public int StartTimeLevel;
 
     [HideInInspector] public Vector2 PlayerVecorMove;
+
+    [HideInInspector] public int LevelBlock;
 
     private void Start()
     {

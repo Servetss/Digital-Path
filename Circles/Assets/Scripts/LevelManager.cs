@@ -37,32 +37,25 @@ public class LevelManager : MonoBehaviour
     {
         //LevelMenu(Clone)
         //SecondLevelMenu(Clone)
-        if (transform.parent.parent.parent.parent.name == "LevelMenu(Clone)")
+        if (transform.parent.parent.parent.parent.name == "LevelMenu(Clone)" || transform.parent.parent.parent.parent.name == "LevelMenu")
             LevelMode = 0;
-        else if (transform.parent.parent.parent.parent.name == "SecondLevelMenu(Clone)")
+        else if (transform.parent.parent.parent.parent.name == "SecondLevelMenu(Clone)" || transform.parent.parent.parent.parent.name == "SecondLevelMenu")
             LevelMode = 1;
-
+        
 
         ////Reset
-        //PlayerPrefs.SetFloat("UnlockCircle", 0));
+        //PlayerPrefs.SetFloat("UnlockCircle", 0);
         //PlayerPrefs.SetFloat("SelfTime" + gameObject.name.Substring(6) + LevelMode, 0);
         //PlayerPrefs.SetString("Wins" + gameObject.name.Substring(6) + LevelMode, "");
         //PlayerPrefs.SetFloat("T" + gameObject.name.Substring(6) + LevelMode, 0);
         ////End Reset
 
-        //PlayerPrefs.SetFloat("SelfTime" + 31 + 0, 0);
-        //PlayerPrefs.SetString("Wins" + 31 + 0, "");
-        //PlayerPrefs.SetFloat("T" + 31 + 0, 0);
+
 
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
 
         levelWin = PlayerPrefs.GetString("Wins" + gameObject.name.Substring(6) + LevelMode) == "True" ? true : false;
 
-
-        if (LB.LevelButtonID != -1 && LB.LevelButtonID == Int32.Parse(gameObject.name.Substring(6)) && LB.LevelMode == LevelMode)
-        {
-            LB.LevelButtonID = -1;
-        }
 
 
         PlayerTime = PlayerPrefs.GetFloat("T" + gameObject.name.Substring(6) + LevelMode);
@@ -108,15 +101,14 @@ public class LevelManager : MonoBehaviour
         LB.StartTimeLevel = TimeStart;
         LB.PlayerVecorMove = VectorMove;
 
+        string Level_ID = gameObject.name.Substring(6);
+        LB.LevelButtonID = Int32.Parse(Level_ID);
+
         // Unlock new circles in "Circles Library" in the class ScrollCircle.cs 
         float a = Mathf.Floor(Convert.ToSingle(gameObject.name.Substring(6)) / transform.parent.parent.parent.parent.GetComponent<PointCollect>().LevelsEtap);
         if (a > PlayerPrefs.GetFloat("UnlockCircle"))
             PlayerPrefs.SetFloat("UnlockCircle", a);
-
-
-        string Level_ID = gameObject.name.Substring(6);  
-
-        LB.LevelButtonID = Int32.Parse(Level_ID);
+       
 
         //Level
         //SecondMode

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Text Timer;
     [SerializeField] private Text RecordTime;
     [SerializeField] private List<GameObject> Stars;
+
+    [SerializeField] private GameObject LevelContent;
+    [SerializeField] private GameObject NextLevel_B;
 
     [Range(0.1f, 2f)]
     public float DistanceToFirstCircle; // Дистанция которую должен пройти герой, чтобы добратся до первого кружка 
@@ -46,6 +48,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
+        Level = LB.LevelButtonID;
+
         sec = LB.StartTimeLevel == 0 ? 6 : LB.StartTimeLevel; // if 0 - Set default time "6"
         if (LB.LevelMode == 1)
         {
@@ -83,7 +87,7 @@ public class Player : MonoBehaviour
             
         }
         catch { }
-        
+
     }
 
     // Update is called once per frame
@@ -213,7 +217,7 @@ public class Player : MonoBehaviour
             float secC = Convert.ToSingle(sec_s) == 10 ? 0.1f : Convert.ToSingle(sec_s) * 0.01f;
             float gameTime = Convert.ToSingle(min_s) + secC;
 
-            if (recordTime < gameTime) // New Record Time
+            if (recordTime <= gameTime) // New Record Time
             {
                 PlayerPrefs.SetFloat("T" + LB.LevelButtonID + LB.LevelMode, gameTime);
                 RecordTime.text = min_s + " : " + sec_s;
@@ -236,7 +240,22 @@ public class Player : MonoBehaviour
                 PlayerPrefs.SetString("Wins" + LB.LevelButtonID + LB.LevelMode, "False");
         }
 
+   
+
         string endText = win ? "Win !" : "Game Over!";
+        LevelContent.SetActive(true);
+
+
         Camera.main.GetComponent<LevelScripts>().PauseClick(endText);
+
+        if(LB.LevelBlock > Level + 1)
+            NextLevel_B.SetActive(true);
+
+    }
+
+    int Level;
+    public void NextLevelClick()
+    {
+        LevelContent.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(Level + 1).GetComponent<LevelManager>().ButtonClick();
     }
 }

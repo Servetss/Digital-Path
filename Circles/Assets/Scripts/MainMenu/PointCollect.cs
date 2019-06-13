@@ -9,18 +9,20 @@ public class PointCollect : MonoBehaviour
     [SerializeField] private Text AllStars_T;
     [SerializeField] private Text NeedStars_T;
 
-    [SerializeField] public int LevelsEtap;
-    [SerializeField] private int LevelGroupe;
+    public int LevelsEtap;
+    public int LevelGroupe;
+
     private List<GameObject> Levels;
     private int Points = 0;
+
+    private LevelBuild LB;
 
     // Start is called before the first frame update
     void Start()
     {
         Levels = new List<GameObject>();
+        LB = GameObject.Find("SaveData").GetComponent<LevelBuild>();
 
-        //int LevelGroupe = (int)(LevelsContent.transform.childCount * 0.2f);
-        
         for (int i = 0; i < LevelsContent.transform.childCount; i++)
         {
             GameObject Level_B = LevelsContent.transform.GetChild(i).gameObject;
@@ -30,15 +32,14 @@ public class PointCollect : MonoBehaviour
             Levels.Insert(i, Level_B);
         }
 
-
-        // Разблокировать уровни и установить Next Points
+        // When find Level block - Set true
+        bool FirstLevelBlock = false;
+        // Unlocks levels and set "Next Points"
         bool SetNextStar = false;
         for (int i = 0; i <= LevelGroupe; i++)
         {
             for(int q = (i * LevelsEtap); q <= (i * LevelsEtap) + (LevelsEtap - 1); q++)
-            { 
-            //for (int q = (i * 10); q <= (i * 10) + 9; q++)
-            //{
+            {
                 if (Levels.Count > q)
                 {
                     if (Points >= (i * (LevelsEtap * 2)))
@@ -50,6 +51,10 @@ public class PointCollect : MonoBehaviour
                             SetNextStar = true;
                             NeedStars_T.text = (i * (LevelsEtap * 2)).ToString();
                         }
+
+                        if (!FirstLevelBlock) { FirstLevelBlock = true; LB.LevelBlock = q; } 
+
+
                         Levels[q].SetActive(false);
                     }
                 }
@@ -60,4 +65,6 @@ public class PointCollect : MonoBehaviour
 
         AllStars_T.text = Points.ToString();
     }
+
+
 }
